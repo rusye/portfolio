@@ -4,20 +4,110 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Test your knowledge of PDX">
-	<title>Russ Codes Portfolio</title>
+	<meta name="description" content="Russ Codes Portfolio">
+  <title>Russ Codes Portfolio</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Metrophobic" " rel="stylesheet ">
+	<link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet ">
   <link rel="stylesheet " href="index.css ">
   </head>
 
-
   <body>
-    <header role="banner">
-      <div class="header-background ">
-        <h1>Russ Yevtushenko</h1>
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="#home" class="w3-bar-item w3-button"><b>Russ</b> Yevtushenko</a>
+        <div class="w3-right w3-hide-small">
+          <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+      <img class="w3-image" src="https://www.w3schools.com/w3images/architect.jpg" alt="building" width="1500" height="800">
+      <div class="w3-display-middle w3-margin-top w3-center">
+        <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Russ</b></span> <span class="w3-hide-small w3-text-light-grey">Codes</span></h1>
       </div>
     </header>
+
+    <!-- Project Section -->
+    <div class="w3-container w3-padding-32" id="projects">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Projects</h3>
+    </div>
+    
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-twothird">
+          <h1>Firmy</h1>
+          <h5 class="w3-padding-32">Firmy will help Russian speaking users locate Russian speaking businesses so that they will be able to communicate in a language that they both understand clearly.</h5>
+          <p class="w3-text-grey"><b>Motivation:</b> The reason I did this is because....</p>
+          <p class="w3-text-grey"><b>Tech Stack:</b> JS, React, Node, Mongoose, MongoDB, JWT, Passport, Bcrypt</p>
+          <a href="#" target="_blank" class="button js-button" role="button">Site Coming Soon</a>
+          <a href="https://github.com/rusye/firmy-server" target="_blank" class="button js-button" role="button">View The Code</a>
+        </div>
+  
+        <div class="w3-third w3-center">
+          <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+      <div class="w3-content">
+        <div class="w3-third w3-center">
+          <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+        </div>
+  
+        <div class="w3-twothird">
+          <h1>Hike Carpool</h1>
+          <h5 class="w3-padding-32">Hike Carpool is a blog dedicated to helping hikers find other hikers that have room in their car's when they are going hiking or even share when they have room in their own cars.</h5>
+          <p class="w3-text-grey"><b>Motivation:</b> When ever I want to go hiking I usually have open seats in my car, and am always open to the idea of meeting new people on hikes.</p>
+          <p class="w3-text-grey"><b>Tech Stack:</b> JavaScript, Node, MongoDB, Express, Passport, JWT, Mocha + Chai</p>
+          <a href="https://mighty-cove-62437.herokuapp.com/" target="_blank" class="button js-button" role="button">Visit Site</a>
+          <a href="https://github.com/rusye/hike-carpool" target="_blank" class="button js-button" role="button">View The Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+            <h1>Late Night Coffe Tea Search</h1>
+            <h5 class="w3-padding-32">Is it 8pm and you want to find a coffeehouse or teahouse that is open right now and within a 5 miles radius of your location?  You've come to the correct place!</h5>
+            <p class="w3-text-grey"><b>Motivation:</b> I was tired of looking for places to get coffee late at night only when to click on the location to find out that it is now closed.</p>
+            <p class="w3-text-grey"><b>Tech Stack:</b> HTML, CSS, JavaScript, jQuery, Leaflet</p>
+            <a href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank" class="button js-button" role="button">Visit Site</a>
+            <a href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank" class="button js-button" role="button">View The Code</a>
+          </div>
+    
+          <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- About Section -->
+    <div class="w3-container w3-padding-32" id="about">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <footer class="w3-center w3-black w3-padding-16">
+      <!-- <a href="#" class="w3-button w3-white w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+      <h4>Connect With Me</h4>
+      <a class="w3-button w3-large w3-white w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+      <a class="w3-button w3-large w3-white w3-hide-small" href="javascript:void(0)" title="Github"><i class="fa fa-github"></i></a>
+      <a class="w3-button w3-large w3-white w3-hide-small" href="javascript:void(0)" title="E-Mail"><i class="fa fa-envelope"></i></a>
+    </footer>
 
     <main role="main">
     
