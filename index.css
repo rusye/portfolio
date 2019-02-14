@@ -1,4 +1,4 @@
-.button {
+.button-two {
   background-color: Crimson;
   border-radius: 5px;
   color: white;
@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 
-.button:focus, .button:hover {
+.button-two:focus, .button-two:hover {
   background-color: FireBrick;
   color: White;
 }
@@ -20,10 +20,6 @@
   display: block;
 }
 
-html {
-  box-sizing: border-box
-}
-
 * {
   box-sizing: border-box;
 }
@@ -33,6 +29,7 @@ html {
 }
 
 html {
+  box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
@@ -51,33 +48,42 @@ html {
   overflow-x: hidden
 }
 
-
 img {
   border-style: none;
   vertical-align: middle;
 }
 
-
-
 .width-onethird img {
   width: 100%;
   max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px #000000;
 }
 
-.my-footer, .my-header, main, section {
+footer, header, main, section {
   display: block
 }
 
-.my-header {
+header {
   overflow: hidden;
 }
 
 h1 {
-  font-size: 36px
+  font-size: 36px;
+  font-weight: 400!important;
 }
 
 h2 {
   font-size: 30px;
+}
+
+footer h2 {
+  font-size: 20px!important;
+  font-weight: 400!important;
+  margin-top: 7px!important;
+  line-height: 0;
+  padding-bottom: 8px;
+  margin-bottom: 16px!important;
 }
 
 h3 {
@@ -85,7 +91,8 @@ h3 {
 }
 
 h4 {
-  font-size: 20px
+  font-size: 20px;
+  margin-top: 0;
 }
 
 h5 {
@@ -100,9 +107,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   margin: 10px 0
-}
-h4 {
-  margin-top: 0;
 }
 
 .bar {
@@ -129,6 +133,20 @@ h4 {
   float: left
 }
 
+#dropDownMenu {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+.bar-block .bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: right;
+  border: none;
+  float: none;
+  outline: 0;
+}
 
 .wide {
   letter-spacing: 4px
@@ -194,13 +212,17 @@ h4 {
 }
 
 .container {
-  padding: 0.01em 16px
+  padding: 0.01em 16px;
+  box-sizing: border-box;
 }
 
-.width-onethird, .width-twothird {
-  float: left;
-  width: 100%;
-  height: 100%;
+.width-onethird {
+  padding: .5em;
+  margin: .5em;
+}
+
+.width-twothird {
+  padding-bottom: .5em;
 }
 
 .button-one {
@@ -250,17 +272,29 @@ h4 {
   top: 0
 }
 
+.connectIcons {
+  font-size: 2em;
+}
 
-
-@media (max-width:650px) {
+@media (max-width:700px) {
   .hide-small {
     display: none!important
   }
 
-  /* Add padding to buttons so that they don't overlap the images */
+  .hide {
+    display:none!important
+  }
+
+  .show {
+    display: block!important
+  }
 }
 
-@media (min-width:651px) {
+@media (min-width:701px) {
+  .hide-large {
+    display: none!important
+  }
+
   .width-onethird {
     width: 33.33333%
   }
@@ -279,14 +313,45 @@ h4 {
   }
 }
 
+@media (max-width: 451px) {
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .connectIcons {
+    font-size: 1em!important;
+  }
+
+  .button-one {
+    padding: 4px 8px;
+  }
+
+  footer {
+    padding-top: 8px!important;
+    padding-bottom: 8px!important
+  }
+
+  footer h2 {
+    margin-bottom: 8px!important;
+    font-size: 16px!important;
+  }
+}
+
+@media (max-width: 376px) {
+  .button-two span {
+    display: none;
+  }
+
+  .button-two {
+    min-width: 100px;
+    text-align: center;
+  }
+}
 
 .white {
   color: #000!important;
   background-color: #fff!important
-}
-
-.padding {
-  padding: 8px 16px!important
 }
 
 .font-large {
@@ -318,9 +383,17 @@ h4 {
   border-color: #f1f1f1!important
 }
 
+.padding {
+  padding: 8px 16px!important
+}
+
+.padding-large {
+  padding:12px 24px!important
+}
+
 .padding-16 {
-  padding-top: 16px!important;
-  padding-bottom: 16px!important
+  padding-top: 16px;
+  padding-bottom: 16px
 }
 
 .padding-32 {

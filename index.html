@@ -13,107 +13,135 @@
   </head>
 
   <body>
+    <!-- Header -->
+    <header role="banner" class="display-container div-content wide" style="max-width:1500px; max-height: 800px;" id="home">
+        <img class="header-image" src="./images/skyscrapers-looking-up_4460x4460.jpg" alt="building" >
+        <div class="display-middle margin-top center-content">
+          <h1 class="font-xxl white-text"><span class="padding black opacity-min"><b>Russ</b></span> <span class="hide-small grey padding opacity-min">Codes</span></h1>
+        </div>
+      </header>
+
     <!-- Nav Bar -->
-    <div role="navigation" class="top">
+    <nav role="navigation" class="top">
       <div class="bar white wide padding card">
+      <a class="bar-item button-one padding hide-large right" href="javascript:void(0)" onclick="dropDownMenu()" title="Toggle Navigation Menu"><i class="fas fa-bars"></i></a>
+
         <a href="#home" class="bar-item button-one"><b>Russ</b> Yevtushenko</a>
+
+        <!-- Nav On Large Screens -->
         <div class="right hide-small">
           <a href="#projects" class="bar-item button-one">Projects</a>
           <a href="#about" class="bar-item button-one">About</a>
           <a href="#connect" class="bar-item button-one">Connect</a>
         </div>
-      </div>
-    </div>
 
-    <!-- Header -->
-    <div role="banner" class="display-container div-content wide my-header" style="max-width:1500px; max-height: 800px;" id="home">
-      <img class="header-image" src="./images/skyscrapers-looking-up_4460x4460.jpg" alt="building" >
-      <div class="display-middle margin-top center-content">
-        <h1 class="font-xxl white-text"><span class="padding black opacity-min"><b>Russ</b></span> <span class="hide-small grey padding opacity-min">Codes</span></h1>
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="dropDownMenu" class="bar-block black hide hide-large top" style="margin-top:54px">
+          <a href="#projects" class="bar-item button-one padding" onclick="dropDownMenu()">Projects</a>
+          <a href="#about" class="bar-item button-one padding" onclick="dropDownMenu()">About</a>
+          <a href="#connect" class="bar-item button-one padding" onclick="dropDownMenu()">Connect</a>
+        </div>
+
       </div>
-    </div>
+    </nav>
 
     <!-- Page content -->
-    <div role="main" class="div-content padding" style="max-width:1500px">
-      <!-- Project Section -->
-      <div class="container padding-32" id="projects">
-        <h2 class="border-bottom border-light-grey padding-16">Projects</h2>
-      </div>
+    <main role="main" class="div-content padding" style="max-width:1500px">
       
-      <!-- First Project -->
-      <div class="light-grey padding-64 container">
-        <div class="project-flex">
+      <!-- Project Section -->
+      <section role="region">
+        <div class="container padding-32" id="projects">
+          <h2 class="border-bottom border-light-grey padding-16">Projects</h2>
+        </div>
+        
+        <!-- First Project -->
+        <div class="light-grey padding-64 container">
+          <div class="project-flex">
 
-          <div class="width-twothird">
-            <h3>Firmy</h3>
-            <h4 class="padding-32">Firmy will help Russian speaking users locate Russian speaking businesses so that they will be able to communicate in a language that they both understand clearly.</h4>
-            <p><b>Motivation:</b> When ever I'm trying to find a business that can do the same job cheaper I sometimes turn to the Russian speaking community, but trying to locate the right business is a little hard because most of it is word of mouth.</p>
-            <p><b>Tech Stack:</b> JS, React, Node, Mongoose, MongoDB, JWT, Passport, Bcrypt</p>
-            <a href="#" target="_blank" class="button js-button" role="button"><i class="fas fa-lg fa-globe-americas"></i> Site Coming Soon</a>
-            <a href="https://github.com/rusye/firmy-server" target="_blank" class="button js-button" role="button"><i class="fab fa-lg fa-github"></i> View The Code</a>
-          </div>
-    
-          <div class="width-onethird center-content">
+            <div class="width-twothird">
+              <h3>Firmy</h3>
+              <h4 class="padding-32">Firmy will help Russian speaking users locate Russian speaking businesses so that they will be able to communicate in a language that they both understand clearly.</h4>
+              <p><b>Motivation:</b> When ever I'm trying to find a business that can do the same job cheaper I sometimes turn to the Russian speaking community, but trying to locate the right business is a little hard because most of it is word of mouth.</p>
+              <p><b>Tech Stack:</b> JS, React, Node, Mongoose, MongoDB, JWT, Passport, Bcrypt</p>
+              
+              <div class="space-between">
+                <a href="#" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Site</span> Coming Soon</a>
+                <a href="https://github.com/rusye/firmy-server" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+              </div>
+            </div>
+      
+            <div class="width-onethird center-content">
               <img src="./screenshots/iphone5 Coming Soon.png" alt="Image of words: coming soon">
             </div>
-        </div>
-      </div>
 
-      <!-- Second Project -->
-      <div class="padding-64 container">
-        <div class="project-flex project-flex-middle">
-
-          <div class="width-twothird">
-            <h3>Hike Carpool</h3>
-            <h4 class="padding-32">Hike Carpool is a blog dedicated to helping hikers find other hikers that have room in their car's when they are going hiking or even share when they have room in their own cars.</h4>
-            <p><b>Motivation:</b> When ever I want to go hiking I usually have open seats in my car, and am always open to the idea of meeting new people on hikes.</p>
-            <p><b>Tech Stack:</b> JavaScript, Node, MongoDB, Express, Passport, JWT, Mocha + Chai</p>
-            <a href="https://mighty-cove-62437.herokuapp.com/" target="_blank" class="button js-button" role="button"><i class="fas fa-lg fa-globe-americas"></i> Visit Site</a>
-            <a href="https://github.com/rusye/hike-carpool" target="_blank" class="button js-button" role="button"><i class="fab fa-lg fa-github"></i> View The Code</a>
           </div>
+        </div>
 
-          <div class="width-onethird center-content">
+        <!-- Second Project -->
+        <div class="padding-64 container">
+          <div class="project-flex project-flex-middle">
+
+            <div class="width-twothird">
+              <h3>Hike Carpool</h3>
+              <h4 class="padding-32">Hike Carpool is a blog dedicated to helping hikers find other hikers that have room in their car's when they are going hiking or even share when they have room in their own cars.</h4>
+              <p><b>Motivation:</b> When ever I want to go hiking I usually have open seats in my car, and am always open to the idea of meeting new people on hikes.</p>
+              <p><b>Tech Stack:</b> JavaScript, Node, MongoDB, Express, Passport, JWT, Mocha + Chai</p>
+              
+              <div class="space-between">
+                <a href="https://mighty-cove-62437.herokuapp.com/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
+                <a href="https://github.com/rusye/hike-carpool" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+              </div>
+            </div>
+
+            <div class="width-onethird center-content">
               <img src="./screenshots/iphone5 Hike Carpool.png" alt="Image of Hike Carpool app">
-          </div>
-        </div>
-      </div>
+            </div>
 
-      <!-- Third Project -->
-      <div class="light-grey padding-64 container">
-        <div class="project-flex">
-          <div class="width-twothird">
-            <h3>Late Night Coffe Tea Search</h3>
-            <h4 class="padding-32">Is it 8pm and you want to find a coffeehouse or teahouse that is open right now and within a 5 miles radius of your location?  You've come to the correct place!</h4>
-            <p><b>Motivation:</b> I was tired of looking for places to get coffee late at night only when to click on the location to find out that it is now closed.</p>
-            <p><b>Tech Stack:</b> HTML, CSS, JavaScript, jQuery, Leaflet</p>
-            <a href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank" class="button js-button" role="button"><i class="fas fa-lg fa-globe-americas"></i> Visit Site</a>
-            <a href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank" class="button js-button" role="button"><i class="fab fa-lg fa-github"></i> View The Code</a>
-          </div>
-    
-          <div class="width-onethird center-content">
-            <img src="./screenshots/iphone5 Late Night Coffee Tea Search.png" alt="Image of Late Night Coffee Tea Search app">
           </div>
         </div>
-      </div>
+
+        <!-- Third Project -->
+        <div class="light-grey padding-64 container">
+          <div class="project-flex">
+
+            <div class="width-twothird">
+              <h3>Late Night Coffe Tea Search</h3>
+              <h4 class="padding-32">Is it 8pm and you want to find a coffeehouse or teahouse that is open right now and within a 5 miles radius of your location?  You've come to the correct place!</h4>
+              <p><b>Motivation:</b> I was tired of looking for places to get coffee late at night only when to click on the location to find out that it is now closed.</p>
+              <p><b>Tech Stack:</b> HTML, CSS, JavaScript, jQuery, Leaflet</p>
+              
+              <div class="space-between">
+                <a href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
+                <a href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+              </div>
+            </div>
+      
+            <div class="width-onethird center-content">
+              <img src="./screenshots/iphone5 Late Night Coffee Tea Search.png" alt="Image of Late Night Coffee Tea Search app">
+            </div>
+
+          </div>
+        </div>
+      </section>
 
       <!-- About Section -->
-      <div role="" class="container padding-32" id="about">
+      <section role="region" class="container padding-32" id="about">
         <h2 class="border-bottom border-light-grey padding-16">About</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
           laboris nisi ut aliquip ex ea commodo consequat.
         </p>
-      </div>
+      </section>
 
-    </div>
+    </main>
 
     <!-- Footer -->
-    <div role="contentinfo" class="my-footer center-content black opacity-min padding-16" id="connect">
+    <footer role="contentinfo" class="center-content black opacity-min padding-16" id="connect">
       <h2>Connect With Me</h2>
-      <a class="button-one font-large white hide-small" href="javascript:void(0)" title="E-Mail"><i class="fa-2x fas fa-envelope"></i></a>
-      <a class="button-one font-large white hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa-2x fab fa-linkedin"></i></a>
-      <a class="button-one font-large white hide-small" href="javascript:void(0)" title="Github"><i class="fa-2x fab fa-github"></i></a>
-    </div>
+      <a class="button-one font-large white" href="javascript:void(0)" title="E-Mail"><i class="connectIcons fas fa-envelope"></i></a>
+      <a class="button-one font-large white" href="javascript:void(0)" title="Linkedin"><i class="connectIcons fab fa-linkedin"></i></a>
+      <a class="button-one font-large white" href="javascript:void(0)" title="Github"><i class="connectIcons fab fa-github"></i></a>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script type="text/javascript " src="index.js "></script>    
