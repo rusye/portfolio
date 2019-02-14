@@ -30,15 +30,15 @@
 
         <!-- Nav On Large Screens -->
         <div class="right hide-small">
-          <a href="#projects" class="bar-item button-one">Projects</a>
           <a href="#about" class="bar-item button-one">About</a>
+          <a href="#projects" class="bar-item button-one">Projects</a>
           <a href="#connect" class="bar-item button-one">Connect</a>
         </div>
 
         <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
         <div id="dropDownMenu" class="bar-block black hide hide-large top" style="margin-top:54px">
-          <a href="#projects" class="bar-item button-one padding" onclick="dropDownMenu()">Projects</a>
           <a href="#about" class="bar-item button-one padding" onclick="dropDownMenu()">About</a>
+          <a href="#projects" class="bar-item button-one padding" onclick="dropDownMenu()">Projects</a>
           <a href="#connect" class="bar-item button-one padding" onclick="dropDownMenu()">Connect</a>
         </div>
 
@@ -47,6 +47,25 @@
 
     <!-- Page content -->
     <main role="main" class="div-content padding" style="max-width:1500px">
+
+      <!-- <section class="fancy-button">
+        <a>
+          <span class="text">Hover me</span>
+          <span class="line -right"></span>
+          <span class="line -top"></span>
+          <span class="line -left"></span>
+          <span class="line -bottom"></span>
+        </a>
+      </section> -->
+
+      <!-- About Section -->
+      <section role="region" class="container padding-32" id="about">
+        <h2 class="border-bottom border-light-grey padding-16">About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </section>
       
       <!-- Project Section -->
       <section role="region">
@@ -65,8 +84,25 @@
               <p><b>Tech Stack:</b> JS, React, Node, Mongoose, MongoDB, JWT, Passport, Bcrypt</p>
               
               <div class="space-between">
-                <a href="#" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Site</span> Coming Soon</a>
-                <a href="https://github.com/rusye/firmy-server" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+
+                <a class="fancy-button" href="#" target="_blank">
+                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo Coming</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+
+                <a class="fancy-button" href="https://github.com/rusye/firmy-server" target="_blank">
+                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+
+                <!-- <a href="#" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Site</span> Coming Soon</a> -->
+                <!-- <a href="https://github.com/rusye/firmy-server" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a> -->
               </div>
             </div>
       
@@ -88,8 +124,25 @@
               <p><b>Tech Stack:</b> JavaScript, Node, MongoDB, Express, Passport, JWT, Mocha + Chai</p>
               
               <div class="space-between">
-                <a href="https://mighty-cove-62437.herokuapp.com/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
-                <a href="https://github.com/rusye/hike-carpool" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+
+                <a class="fancy-button" href="https://mighty-cove-62437.herokuapp.com/" target="_blank">
+                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+
+                <a class="fancy-button" href="https://github.com/rusye/hike-carpool" target="_blank">
+                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+
+                <!-- <a href="https://mighty-cove-62437.herokuapp.com/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
+                <a href="https://github.com/rusye/hike-carpool" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a> -->
               </div>
             </div>
 
@@ -111,8 +164,25 @@
               <p><b>Tech Stack:</b> HTML, CSS, JavaScript, jQuery, Leaflet</p>
               
               <div class="space-between">
-                <a href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
-                <a href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a>
+
+                <a class="fancy-button" href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank">
+                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+
+                <a class="fancy-button" href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank">
+                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="line -right"></span>
+                  <span class="line -top"></span>
+                  <span class="line -left"></span>
+                  <span class="line -bottom"></span>
+                </a>
+                  
+                <!-- <a href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank" class="button-two" role="button"><i class="fas fa-lg fa-globe-americas"></i><span> Visit</span> Site</a>
+                <a href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank" class="button-two" role="button"><i class="fab fa-lg fa-github"></i><span> View</span> Code</a> -->
               </div>
             </div>
       
@@ -122,15 +192,6 @@
 
           </div>
         </div>
-      </section>
-
-      <!-- About Section -->
-      <section role="region" class="container padding-32" id="about">
-        <h2 class="border-bottom border-light-grey padding-16">About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
       </section>
 
     </main>

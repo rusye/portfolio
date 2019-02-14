@@ -1,3 +1,110 @@
+/* ++++++++++++++++++++++++ */
+/* +++Fancy Button Stuff+++ */
+/* ++++++++++++++++++++++++ */
+
+/* .fancy-button {
+  background: #2d2d2d;
+  max-width: 150px;
+} */
+.fancy-button {
+  text-decoration: none;
+  color: #000000;
+  padding: 0.2em calc(0.2em * 1.2);
+  display: inline-block;
+  border: 3px solid transparent;
+  position: relative;
+  /* font-size: 1.5em; */
+  cursor: pointer;
+  letter-spacing: 0.07em;
+}
+.fancy-button a .text {
+  font-family: proxima-nova, monospace;
+  transform: translate3d(0, 0.7em, 0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.fancy-button:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #7a8088;
+  transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
+  transform-origin: left;
+}
+.fancy-button .line {
+  position: absolute;
+  background: #7a8088;
+}
+.fancy-button .line.-right, .fancy-button .line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1, 0, 1);
+}
+.fancy-button .line.-top, .fancy-button .line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0, 1, 1);
+}
+.fancy-button .line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.23s;
+  transform-origin: top;
+}
+.fancy-button .line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
+.fancy-button .line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
+.fancy-button .line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1, 0, 0.65, 1.01);
+  transform-origin: right;
+}
+.fancy-button:hover .text, .fancy-button:active .text {
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+}
+.fancy-button:hover:after, .fancy-button:active:after {
+  transform: scale3d(0, 1, 1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+}
+.fancy-button:hover .line, .fancy-button:active .line {
+  transform: scale3d(1, 1, 1);
+}
+.fancy-button:hover .line.-right, .fancy-button:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+  transform-origin: bottom;
+}
+.fancy-button:hover .line.-top, .fancy-button:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+.fancy-button:hover .line.-left, .fancy-button:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+.fancy-button:hover .line.-bottom, .fancy-button:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+  transform-origin: left;
+}
+
+
+/* ++++++++++++++++++++++++ */
+/* ++The rest of the code++ */
+/* ++++++++++++++++++++++++ */
 .button-two {
   background-color: Crimson;
   border-radius: 5px;
@@ -78,7 +185,7 @@ h2 {
 }
 
 footer h2 {
-  font-size: 20px!important;
+  font-size: 25px!important;
   font-weight: 400!important;
   margin-top: 7px!important;
   line-height: 0;
@@ -93,6 +200,10 @@ h3 {
 h4 {
   font-size: 20px;
   margin-top: 0;
+}
+
+.width-twothird h4 {
+  font-weight: 600;
 }
 
 h5 {
@@ -344,6 +455,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .button-two {
+    min-width: 100px;
+    text-align: center;
+  }
+
+  .fancy-button {
     min-width: 100px;
     text-align: center;
   }
