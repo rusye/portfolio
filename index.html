@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Russ Codes Portfolio">
-  <title>Russ Codes Portfolio</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet ">
-  <link rel="stylesheet " href="index.css ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Russ Codes Portfolio">
+    <title>Russ Codes Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet ">
+    <link rel="stylesheet " href="index.css ">
   </head>
 
   <body>
@@ -24,7 +23,7 @@
     <!-- Nav Bar -->
     <nav role="navigation" class="top">
       <div class="bar white wide padding card">
-      <a class="bar-item button-one padding hide-large right" href="javascript:void(0)" onclick="dropDownMenu()" title="Toggle Navigation Menu"><i class="fas fa-bars"></i></a>
+      <a class="bar-item button-one padding hide-large right" href="javascript:void(0)" onclick="dropDownMenu()" title="Toggle Navigation Menu"><img class="connectIcons" src="images/menu.svg"></a>
 
         <a href="#home" class="bar-item button-one"><b>Russ</b> Yevtushenko</a>
 
@@ -71,27 +70,28 @@
               <h3>Firmy(Coming Soon)</h3>
               <h4 class="padding-32">Firmy will help Russian speaking users locate Russian speaking businesses so that they will be able to communicate in a language that they both understand clearly.</h4>
               <p><b>Motivation:</b> When ever I'm trying to find a business that can do the same job cheaper I sometimes turn to the Russian speaking community, but trying to locate the right business is a little hard because most of it is word of mouth.</p>
-              <p><b>Tech Stack:</b> JS, React, Node, Mongoose, MongoDB, JWT, Passport, Bcrypt</p>
-              <p><b>Tech Stack: </b>
-                <img class="stackIcon" title="React.js" src="images/react.svg">
-                <img class="stackIcon" title="Node.js" src="images/nodejs.svg">
-                <img class="stackIcon" title="MongoDB" src="images/mongodb.svg">
-                <img class="stackIcon" title="Express.js" src="images/express.svg">
-                <img class="stackIcon" title="Passport.js" src="images/passport.png">
-                <img class="stackIcon" title="Json Web Token" src="images/jwt.svg">
-                <img class="stackIcon" title="mocha.js" src="images/mocha.svg">
-                <img class="stackIcon" title="chai.js" src="images/chaijs.svg">
-                <img class="stackIcon" title="html5" src="images/html5.svg">
-                <img class="stackIcon" title="CSS3" src="images/css-3.svg">
-                <img class="stackIcon" title="JavaScript" src="images/javascript.svg">
-              </p>
-              
-              
+              <div class="techStackContainer">
+                <p><b>Tech Stack: </b></p>
+                <div class="techStack">
+                  <div class="stackIcon"><img title="React.js" src="images/react.svg"><p>React</p></div>
+                  <div class="stackIcon"><img title="Node.js" src="images/nodejs.svg"><p>Node</p></div>
+                  <div class="stackIcon"><img title="MongoDB" src="images/mongodb.svg"><p>MongoDB</p></div>
+                  <div class="stackIcon"><img title="Express.js" src="images/express.svg"><p>Express</p></div>
+                  <div class="stackIcon"><img title="Passport.js" src="images/passport.png"><p>Passport</p></div>
+                  <div class="stackIcon"><img title="Json Web Token" src="images/jwt.svg"><p>JWT</p></div>
+                  <div class="stackIcon"><img title="mocha.js" src="images/mocha.svg"><p>Mocha</p></div>
+                  <div class="stackIcon"><img title="chai.js" src="images/chaijs.svg"><p>Chai</p></div>
+                  <div class="stackIcon"><img title="html5" src="images/html5.svg"><p>HTML5</p></div>
+                  <div class="stackIcon"><img title="CSS3" src="images/css-3.svg"><p>CSS3</p></div>
+                  <div class="stackIcon"><img title="JavaScript" src="images/javascript.svg"><p>JavaScript</p></div>
+                </div>
+              </div>
+
               <div class="space-between">
 
                 <!-- Demo Button -->  
                 <a class="fancy-button" href="#" target="_blank">
-                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo</span>
+                  <span class="text"><img class="connectIcons" src="images/globe.svg"> Demo</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -100,7 +100,7 @@
 
                 <!-- Code Button -->
                 <a class="fancy-button" href="https://github.com/rusye/firmy-server" target="_blank">
-                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="text"><img class="connectIcons" src="images/github.svg"> Code</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -125,25 +125,27 @@
               <h3>Hike Carpool</h3>
               <h4 class="padding-32">Hike Carpool is a blog dedicated to helping hikers find other hikers that have room in their car's when they are going hiking or even share when they have room in their own cars.</h4>
               <p><b>Motivation:</b> When ever I want to go hiking I usually have open seats in my car, and am always open to the idea of meeting new people on hikes.</p>
-              <p><b>Tech Stack:</b> JavaScript, Node, MongoDB, Express, Passport, JWT, Mocha + Chai</p>
-              <p><b>Tech Stack: </b>
-                <img class="stackIcon" title="Node.js" src="images/nodejs.svg"> 
-                <img class="stackIcon" title="MongoDB" src="images/mongodb.svg"> 
-                <img class="stackIcon" title="Express.js" src="images/express.svg"> 
-                <img class="stackIcon" title="Passport.js" src="images/passport.png"> 
-                <img class="stackIcon" title="Json Web Token" src="images/jwt.svg"> 
-                <img class="stackIcon" title="mocha.js" src="images/mocha.svg"> 
-                <img class="stackIcon" title="chai.js" src="images/chaijs.svg"> 
-                <img class="stackIcon" title="html5" src="images/html5.svg"> 
-                <img class="stackIcon" title="CSS3" src="images/css-3.svg"> 
-                <img class="stackIcon" title="JavaScript" src="images/javascript.svg">  
-              </p>
+              <div class="techStackContainer">
+                <p><b>Tech Stack: </b></p>
+                <div class="techStack">
+                  <div class="stackIcon"><img title="Node.js" src="images/nodejs.svg"><p>Node</p></div>
+                  <div class="stackIcon"><img title="MongoDB" src="images/mongodb.svg"><p>MongoDB</p></div>
+                  <div class="stackIcon"><img title="Express.js" src="images/express.svg"><p>Express</p></div>
+                  <div class="stackIcon"><img title="Passport.js" src="images/passport.png"><p>Passport</p></div>
+                  <div class="stackIcon"><img title="Json Web Token" src="images/jwt.svg"><p>JWT</p></div>
+                  <div class="stackIcon"><img title="mocha.js" src="images/mocha.svg"><p>Mocha</p></div>
+                  <div class="stackIcon"><img title="chai.js" src="images/chaijs.svg"><p>Chai</p></div>
+                  <div class="stackIcon"><img title="html5" src="images/html5.svg"><p>HTML5</p></div>
+                  <div class="stackIcon"><img title="CSS3" src="images/css-3.svg"><p>CSS3</p></div>
+                  <div class="stackIcon"><img title="JavaScript" src="images/javascript.svg"><p>JavaScript</p></div>
+                </div>
+              </div>
               
               <div class="space-between">
 
                 <!-- Demo Button -->
                 <a class="fancy-button" href="https://mighty-cove-62437.herokuapp.com/" target="_blank">
-                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo</span>
+                  <span class="text"><img class="connectIcons" src="images/globe.svg"> Demo</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -152,7 +154,7 @@
 
                 <!-- Code Button -->
                 <a class="fancy-button" href="https://github.com/rusye/hike-carpool" target="_blank">
-                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="text"><img class="connectIcons" src="images/github.svg"> Code</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -177,20 +179,22 @@
               <h3>Late Night Coffee Tea Search</h3>
               <h4 class="padding-32">Is it 8pm and you want to find a coffeehouse or teahouse that is open right now and within a 5 miles radius of your location?  You've come to the correct place!</h4>
               <p><b>Motivation:</b> I was tired of looking for places to get coffee late at night only when to click on the location to find out that it is now closed.</p>
-              <p><b>Tech Stack:</b> HTML, CSS, JavaScript, jQuery, Leaflet</p>
-              <p><b>Tech Stack: </b>
-                <img class="stackIcon" title="html5" src="images/html5.svg"> 
-                <img class="stackIcon" title="CSS3" src="images/css-3.svg"> 
-                <img class="stackIcon" title="JavaScript" src="images/javascript.svg"> 
-                <img class="stackIcon" title="Leaflet" src="images/leaflet.png"> 
-                <img class="stackIcon" title="jQuery" src="images/jQuery.svg">
-              </p>
+              <div class="techStackContainer">
+                <p><b>Tech Stack: </b></p>
+                <div class="techStack">
+                  <div class="stackIcon"><img title="html5" src="images/html5.svg"><p>HTML5</p></div>
+                  <div class="stackIcon"><img title="CSS3" src="images/css-3.svg"><p>CSS3</p></div>
+                  <div class="stackIcon"><img title="JavaScript" src="images/javascript.svg"><p>JavaScript</p></div>
+                  <div class="stackIcon"><img title="Leaflet" src="images/leaflet.png"><p>Leaflet</p></div>
+                  <div class="stackIcon"><img title="jQuery" src="images/jQuery.svg"><p>jQuery</p></div>
+                </div>
+              </div>
               
               <div class="space-between">
 
                 <!-- Demo Button -->
                 <a class="fancy-button" href="https://rusye.github.io/Late-Night-Coffee-Tea/" target="_blank">
-                  <span class="text"><i class="fas fa-lg fa-globe-americas"></i> Demo</span>
+                  <span class="text"><img class="connectIcons" src="images/globe.svg"> Demo</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -199,7 +203,7 @@
 
                 <!-- Code Button -->
                 <a class="fancy-button" href="https://github.com/rusye/Late-Night-Coffee-Tea" target="_blank">
-                  <span class="text"><i class="fab fa-lg fa-github"></i> Code</span>
+                  <span class="text"><img class="connectIcons" src="images/github.svg"> Code</span>
                   <span class="line -right"></span>
                   <span class="line -top"></span>
                   <span class="line -left"></span>
@@ -222,9 +226,9 @@
     <!-- Footer -->
     <footer role="contentinfo" class="center-content black opacity-min padding-16" id="connect">
       <h2>Connect With Me</h2>
-      <a class="button-one font-large white" href="mailto:ruslanyevjob@gmail.com" title="E-Mail"><i class="connectIcons fas fa-envelope"></i></a>
-      <a class="button-one font-large white" href="https://www.linkedin.com/in/russ-yevtushenko/" title="Linkedin"><i class="connectIcons fab fa-linkedin"></i></a>
-      <a class="button-one font-large white" href="https://github.com/rusye" title="Github"><i class="connectIcons fab fa-github"></i></a>
+      <a class="button-one font-large white" href="mailto:ruslanyevjob@gmail.com" title="E-Mail"><img class="connectIcons" src="images/envelope.svg"></a>
+      <a class="button-one font-large white" href="https://www.linkedin.com/in/russ-yevtushenko/" title="Linkedin"><img class="connectIcons" src="images/linkedin.svg"></a>
+      <a class="button-one font-large white" href="https://github.com/rusye" title="Github"><img class="connectIcons" src="images/github.svg"></a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js " integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
