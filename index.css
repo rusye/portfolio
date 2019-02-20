@@ -68,43 +68,6 @@
   transform-origin: right;
 }
 
-.fancy-button:hover .text, .fancy-button:active .text, .fancy-button:focus .text {
-  transform: translate3d(0, 0, 0);
-  transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-}
-
-.fancy-button:hover:after, .fancy-button:active:after, .fancy-button:focus:after {
-  transform: scale3d(0, 1, 1);
-  right: -3px;
-  left: -3px;
-  transform-origin: right;
-  transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
-}
-
-.fancy-button:hover .line, .fancy-button:active .line, .fancy-button:focus .line {
-  transform: scale3d(1, 1, 1);
-}
-
-.fancy-button:hover .line.-right, .fancy-button:active .line.-right, .fancy-button:focus .line.-right {
-  transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
-  transform-origin: bottom;
-}
-
-.fancy-button:hover .line.-top, .fancy-button:active .line.-top, .fancy-button:focus .line.-top {
-  transition: transform 0.08s linear 0.4s;
-  transform-origin: right;
-}
-
-.fancy-button:hover .line.-left, .fancy-button:active .line.-left, .fancy-button:focus .line.-left {
-  transition: transform 0.08s linear 0.48s;
-  transform-origin: top;
-}
-
-.fancy-button:hover .line.-bottom, .fancy-button:active .line.-bottom, .fancy-button:focus .line.-bottom {
-  transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
-  transform-origin: left;
-}
-
 .fancy-button img {
   height: 1.33333em;
   line-height: .75em;
@@ -366,11 +329,6 @@ h1, h2, h3, h4, h5, h6 {
   white-space: normal;
 }
 
-.button-one:hover, .button-one:focus {
-  color: #000!important;
-  background-color: #ccc!important;
-}
-
 .top{
   position: fixed;
   width: 100%;
@@ -470,6 +428,49 @@ html {
 
   .project-flex-middle .width-twothird {
     padding-left: 7.5px;
+  }
+
+  .button-one:hover, .button-one:focus {
+    color: #000!important;
+    background-color: #ccc!important;
+  }
+
+  /* Fancy button hover */
+  .fancy-button:hover .text, .fancy-button:active .text, .fancy-button:focus .text {
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
+  }
+
+  .fancy-button:hover:after, .fancy-button:active:after, .fancy-button:focus:after {
+    transform: scale3d(0, 1, 1);
+    right: -3px;
+    left: -3px;
+    transform-origin: right;
+    transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
+  }
+
+  .fancy-button:hover .line, .fancy-button:active .line, .fancy-button:focus .line {
+    transform: scale3d(1, 1, 1);
+  }
+
+  .fancy-button:hover .line.-right, .fancy-button:active .line.-right, .fancy-button:focus .line.-right {
+    transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
+    transform-origin: bottom;
+  }
+
+  .fancy-button:hover .line.-top, .fancy-button:active .line.-top, .fancy-button:focus .line.-top {
+    transition: transform 0.08s linear 0.4s;
+    transform-origin: right;
+  }
+
+  .fancy-button:hover .line.-left, .fancy-button:active .line.-left, .fancy-button:focus .line.-left {
+    transition: transform 0.08s linear 0.48s;
+    transform-origin: top;
+  }
+
+  .fancy-button:hover .line.-bottom, .fancy-button:active .line.-bottom, .fancy-button:focus .line.-bottom {
+    transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
+    transform-origin: left;
   }
 }
 
