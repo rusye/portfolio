@@ -479,10 +479,6 @@ html {
     justify-content: space-between;
   }
 
-  footer .icon {
-    height: 1em!important;
-  }
-
   .button-one {
     padding: 4px 8px;
   }
