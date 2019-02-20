@@ -423,6 +423,11 @@ html {
   margin: 15px 0 15px 0;
 }
 
+
+/* ++++++++++++++++++++++++ */
+/* ++++++ Media Sizes++++++ */
+/* ++++++++++++++++++++++++ */
+
 @media (max-width:700px) {
   .hide-small {
     display: none!important;
@@ -454,13 +459,17 @@ html {
     width: 66.66666%;
   }
   
+  .project-flex {
+    display: flex;
+    align-items: center;
+  }
+  
   .project-flex-middle {
     flex-direction: row-reverse;
   }
 
-  .project-flex {
-    display: flex;
-    align-items: center;
+  .project-flex-middle .width-twothird {
+    padding-left: 7.5px;
   }
 }
 
@@ -489,10 +498,10 @@ html {
   }
 }
 
-.white {
-  color: #000!important;
-  background-color: #fff!important;
-}
+
+/* ++++++++++++++++++++++++ */
+/* ++Font Sizes & Padding++ */
+/* ++++++++++++++++++++++++ */
 
 .font-large {
   font-size: 18px!important;
@@ -502,25 +511,8 @@ html {
   font-size: 36px!important;
 }
 
-.white-text {
-  color: #fff!important;
-}
-
-.black {
-  color: #fff!important;
-  background-color: #000!important;
-}
-
-.opacity-min {
-  opacity: 0.75;
-}
-
 .border-bottom {
   border-bottom: 1px solid #ccc!important;
-}
-
-.border-light-grey {
-  border-color: #f1f1f1!important;
 }
 
 .padding {
@@ -538,13 +530,18 @@ html {
 
 .padding-32 {
   padding-top: 32px!important;
-  padding-bottom: 32px!important
+  padding-bottom: 32px!important;
 }
 
 .padding-64 {
   padding-top: 64px!important;
   padding-bottom: 64px!important;
 }
+
+
+/* ++++++++++++++++++++++++ */
+/* ++++++++ Colors ++++++++ */
+/* ++++++++++++++++++++++++ */
 
 .text-grey {
   color: #757575!important;
@@ -558,4 +555,26 @@ html {
 .light-grey {
   color: #000!important;
   background-color: #f1f1f1!important;
+}
+
+.border-light-grey {
+  border-color: #f1f1f1!important;
+}
+
+.white-text {
+  color: #fff!important;
+}
+
+.black {
+  color: #fff!important;
+  background-color: #000!important;
+}
+
+.white {
+  color: #000!important;
+  background-color: #fff!important;
+}
+
+.opacity-min {
+  opacity: 0.75;
 }
