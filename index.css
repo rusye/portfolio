@@ -524,19 +524,13 @@ html {
   padding:12px 24px!important;
 }
 
-.padding-16 {
-  padding-top: 16px;
-  padding-bottom: 16px;
+.padding-16-sides {
+  padding: 0 16px;
 }
 
 .padding-32 {
-  padding-top: 32px!important;
-  padding-bottom: 32px!important;
-}
-
-.padding-64 {
-  padding-top: 64px!important;
-  padding-bottom: 64px!important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
 
 
