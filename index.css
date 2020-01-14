@@ -155,13 +155,14 @@ h2 {
   font-size: 30px;
 }
 
+footer {
+  padding-bottom: 8px;
+}
+
 footer h2 {
   font-size: 25px !important;
   font-weight: 400 !important;
-  margin-top: 7px !important;
-  line-height: 0;
-  padding-bottom: 8px;
-  margin-bottom: 16px !important;
+  margin-bottom: 0 !important;
 }
 
 h3 {
